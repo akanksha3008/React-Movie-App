@@ -12,7 +12,7 @@ function App() {
     const [favList, updateFavList] = useState([]);
 
     async function searchChanged(searchValue) {
-        const response = await fetch('http://www.omdbapi.com/?s=' + searchValue + '&apikey=5c3f7439');
+        const response = await fetch('https://www.omdbapi.com/?s=' + searchValue + '&apikey=5c3f7439');
         const responseJson = await response.json();
         if (responseJson.Search && responseJson.Search.length > 0)
             updateMovieList(responseJson.Search)
