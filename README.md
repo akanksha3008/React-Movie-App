@@ -11,6 +11,14 @@ npm commands :
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Glimpse 
+
+**Favourite's list:**
+![image](https://user-images.githubusercontent.com/53993210/168425324-482dacf5-b549-470d-b827-14401dc4c203.png)
+
+**Search results fetched using OMDB API**
+![image](https://user-images.githubusercontent.com/53993210/168425389-6ebaee7d-dc64-45c4-b65b-93a492d3f98a.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
