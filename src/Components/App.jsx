@@ -12,12 +12,7 @@ function App() {
     const [favList, updateFavList] = useState([]);
 
     async function searchChanged(searchValue) {
-        var response;
-        response.setHeader('Access-Control-Allow-Origin', '*');
-        response.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-        response.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-        response.setHeader('Access-Control-Allow-Credentials', true);
-        response = await fetch('http://www.omdbapi.com/?s=' + searchValue + '&apikey=5c3f7439');
+        const response = await fetch('http://www.omdbapi.com/?s=' + searchValue + '&apikey=5c3f7439');
         const responseJson = await response.json();
         if (responseJson.Search && responseJson.Search.length > 0)
             updateMovieList(responseJson.Search)
